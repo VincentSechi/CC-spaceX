@@ -1,0 +1,53 @@
+.peoples{
+    display: none;
+    flex-direction: column;
+    width: calc(100% - 80px);
+    padding: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 300px;
+    .carousel-peoples{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .carousel-item{
+            position: relative;
+            width: 200px;
+            height: 300px;
+            .people-info{
+                width: 200px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                border-radius: 20px;
+                background-image: url("../../../../assets/images/sky.png");
+                background-color: transparent;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                justify-content: flex-end;
+                position: relative;
+                &::after{
+                    content: '';
+                    width: 100%;
+                    height: 100px;
+                    background-color: rgba(#000000, 0.90);
+                    position: absolute;
+                    z-index: 1;
+                }
+                .people-name{
+                    font-size: $font-lg;
+                    color:$yellow;
+                    z-index: 2;
+                }
+                .people-planet{
+                    z-index: 2;
+                    font-size:$font-md;
+                    color:white;
+                    margin-bottom:50px;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,87 @@
+@import '../base/variable';
+
+body{
+    background-color: black;
+    main{
+        width: 100%;
+        height: 100vh;
+        .main-container{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            .content-home{
+                border-left:2px solid #fff;
+                border-right: 2px solid white;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-right: -2px;
+                padding:40px 20px;
+                gap:100px;
+
+            }
+            .planet{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                max-width: 1440px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+.button{
+    color: white;
+    font-size: $font-md;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 10px 20px;
+    background-color: transparent;
+    transition: all .3s;
+    width: fit-content;
+    &:hover{
+        color:black;
+        border-color:black;
+        background-color: white;
+    }
+}
+.blue-span{
+    color:$primary-color !important;
+    font-weight: 700;
+}
+.hidden{
+    display: none !important;
+}
+.star{
+    position: absolute;
+    top:-100px;
+    width: 5px;
+    height: 5px;
+    object-fit: contain;
+    background-image: url("../../../../assets/icons/star-solid.svg");
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(100%) sepia(53%) saturate(3021%) hue-rotate(308deg) brightness(109%) contrast(92%);
+    animation: animate 5s linear infinite;
+
+    opacity: 0.5;
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: translateY(0) scaleY(1);
+    }
+    70%
+    {
+        transform: translateY(3000px) scaleY(1);
+    }
+    100%
+    {
+        transform: translateY(380px);
+    }
+}

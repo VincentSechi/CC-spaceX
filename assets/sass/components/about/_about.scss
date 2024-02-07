@@ -1,0 +1,27 @@
+@import '../../base/variable';
+
+.about{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 80px);
+    border: 2px solid white;
+    padding: 20px;
+    gap:30px;
+    margin: 0 auto;
+    background-image: url("../../../../assets/images/galaxy.jpg");
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+    .title{
+        font-size: $font-md;
+        text-transform: uppercase;
+    }
+    .desc{
+        .blue-span{
+            text-transform: uppercase;
+        }
+
+    }
+}

@@ -1,0 +1,164 @@
+@import '../../base/variable';
+
+.planet-summary{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 800px);
+    height: 400px;
+    padding: 20px;
+    margin: 0 auto 0 20px;
+    overflow: hidden;
+    border: 2px solid white;
+    background-image: url("../../../../assets/images/planet.jpg");
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .title{
+        font-size: $font-lg;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: white;
+        margin-bottom:20px;
+    }
+    .filter-planet{
+        padding: 3px 10px;
+        font-size: 12px;
+        margin-bottom:20px;
+        background-color: black;
+        text-transform: none;
+        option{
+
+        }
+    }
+    .input-field{
+        display: flex;
+        width: 100%;
+        height: 30px;
+        align-items: center;
+        background-color: black;
+        border: 1px solid white;
+        input{
+            height: 100%;
+            width: 100%;
+            outline: none;
+            color:#585656e9;
+            padding: 5px 20px;
+            border:none;
+            background-color: transparent;
+            padding-left:10px;
+        }
+        .icon{
+            width: 15px;
+            height: 15px;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            padding-right: 20px;
+        }
+    }
+    .table-container{
+        margin-top:40px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-y: scroll;
+        .table-heading{
+            background-color: $primary-color;
+            tr{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                th{
+                    color: white;
+                    font-size: $font-md;
+                    font-weight: 700;
+                    padding: 5px 20px;
+                }
+            }
+        }
+        tbody{
+            margin-top:10px;
+            display: flex;
+            flex-direction: column;
+            tr{
+                padding: 10px 20px 10px 20px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid white;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+                td{
+                    color: white;
+                }
+                .td2-value{
+                    text-align: end;
+                }
+            }
+        }
+    }
+    .result{
+        font-style: italic;
+        font-size: $font-sm;
+        color:white;
+        font-weight: 400;
+        margin-top: 30px;    
+    }
+}
+.planet-card{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding:40px 20px;
+    width: calc(100% - 300px);
+    height: 300px;
+    margin: 0 auto 0 20px;
+    overflow: hidden;
+    border: 2px solid white;
+    background-color: black;
+    .title{
+        color: $primary-color;
+        font-weight: 700;
+        font-size: $font-lg;
+    }
+    .population{
+        font-style: italic;
+        color:white;
+    }
+    .card-infos{
+        display: flex;
+        gap: 70px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding-left: 50px;    
+        flex-wrap: wrap;
+        position: relative;
+        .card-info{
+            display: flex;
+            gap:10px;
+            min-width: 40%;
+            .image{
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+                filter: invert(59%) sepia(11%) saturate(1518%) hue-rotate(158deg) brightness(90%) contrast(84%);
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+                .title{
+
+                }
+                .value{
+                    color:white;
+                }
+            }
+        }
+    }
+    .button{
+        margin-left: auto;
+        margin-right:40px;
+    }
+}

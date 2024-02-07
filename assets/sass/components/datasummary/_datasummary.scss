@@ -1,0 +1,53 @@
+.data-summary{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 80px);
+    min-height: 300px;
+    border: 2px solid white;
+    padding: 20px;
+    margin: 0 auto;
+    gap:30px;
+    background-image: url("../../../../assets/images/ship.jpg");
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+    .title{
+        font-size: $font-md;
+        text-transform: uppercase;
+    }
+    .subtitle{
+        font-size: $font-sm;
+    }
+    .all-datas{
+        display: flex;
+        align-items: center;
+        gap:30px;
+        margin-top:20px;
+        .data{
+            display: flex;
+            align-items: center;
+            gap:15px;
+            img{
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+                filter: invert(55%) sepia(61%) saturate(280%) hue-rotate(158deg) brightness(88%) contrast(95%);
+            }
+            .infos, .info{
+                display: flex;
+                flex-direction: column;
+                gap:5px;
+                font-size:$font-md;
+                .number{
+                    font-size: $font-sm;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+    .button{
+        margin: auto 0 0 auto;
+    }
+}
