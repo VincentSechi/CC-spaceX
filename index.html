@@ -70,7 +70,7 @@
                             </div>
                             <div class="data">
                                 <img src="./assets/icons/clock-solid.svg" alt="users">
-                                <div class="info" data-info="planets">
+                                <div class="info" data-info="">
                                     <h3 class="blue-span">Prochain mission</h3>
                                     <span class="number-solo">10 Juin 2021</span>
                                 </div>
@@ -85,6 +85,9 @@
                             </h2>
                             <select name="" id="" class="filter-planet button">
                                 <option value="population">Par population</option>
+                                <option value="0">0 à 100.000</option>
+                                <option value="1">100.000 à 100.000.000</option>
+                                <option value="2">+100.000.000</option>
                             </select>
                             <div class="input-field">
                                 <input type="text" placeholder="Faites votre recherche">
@@ -104,7 +107,10 @@
                             <span class="result"></span>
                         </div>
                         <div class="planet-card">
-                            <div class="planet-card-container">
+                            <div class="placeholder">
+                                Veuillez saisir une planète
+                            </div>
+                            <div class="planet-card-container hidden">
                                 <h2 class="title"></h2>
                                 <p class="population"><span class="blue-span">Population :</span><span class="value"></span></p>
                                 <div class="card-infos">
@@ -138,7 +144,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="/" class="button">En savoir plus</a>
+                            <a href="/" class="button button-container">En savoir plus</a>
                         </div>
                     </div>
                     <div class="ships">
